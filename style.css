@@ -10,7 +10,6 @@
 body {
     position: relative;
     width: 98vw;
-    height: 93vh;
     background: linear-gradient(236.85deg, #041832 27.26%, #3468A7 96.03%);
     font-family: 'Roboto Slab', serif;
 }
@@ -97,11 +96,11 @@ body {
     border-radius: 100%;
 }
 
-.on-off-theme:checked + .on-off-btn::before {
+.on-off-theme:checked+.on-off-btn::before {
     background: #EEEEEE;
 }
 
-.on-off-theme:checked + .on-off-btn::after {
+.on-off-theme:checked+.on-off-btn::after {
     left: 1.025em;
 }
 
@@ -206,11 +205,17 @@ footer {
 /* CLASSES PARA ATIVAR O DARK MODE */
 
 .dark {
-    background: linear-gradient(236.85deg, #375B86 27.26%, #6B87A9 96.03%);
+    background: rgb(16, 26, 38);
+    background: linear-gradient(135deg, rgba(16, 26, 38, 0.95) 23%, rgba(1, 35, 64, 0.95) 82%);
 }
 
 .dark .container {
     background: #363636;
+}
+
+.dark .projects {
+    background: rgb(16, 26, 38);
+    background: linear-gradient(135deg, rgba(16, 26, 38, 0.95) 23%, rgba(1, 35, 64, 0.95) 82%);
 }
 
 .dark .title h1 {
