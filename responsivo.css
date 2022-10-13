@@ -62,5 +62,35 @@
     .socials {
         margin: 0;    
     }
+
+    .switch {
+        position: relative;
+        width: 3.8rem;
+        height: 1.2rem;
+    }
+
+    .slider:before {
+        position: absolute;
+        content: "";
+        height: 1rem;
+        width: 1rem;
+        border-radius: 20px;
+        left: 0.1rem;
+        top: 50%;
+        transform: translateY(-50%);
+        background: linear-gradient(40deg, rgba(212,0,0,0.8764882662049195) 34%, rgba(241,106,0,1) 64%, rgba(255,255,1,0.8988972297903537) 100%);
+        transition: 0.4s;
+    }
+
+    input:checked + .slider {
+        background-color: #37393f;
+    }
+
+      input:checked + .slider:before {
+        left: calc(100% - 1rem);
+        background: #37393f;
+        box-shadow: inset -3px -2px 5px -2px #8983f7, inset -10px -4px 0 0 #a3dafb;
+        
+    }
     
 }
